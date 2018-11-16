@@ -1,5 +1,6 @@
 #pragma once
 #include "MyForm2.h"
+#include "MyForm3.h"
 namespace Project1 {
 
 	using namespace System;
@@ -96,9 +97,9 @@ namespace Project1 {
 				static_cast<System::Byte>(238)));
 			this->label1->Location = System::Drawing::Point(51, 218);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(148, 45);
+			this->label1->Size = System::Drawing::Size(118, 45);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"label1";
+			this->label1->Text = L"Data";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// button1
@@ -155,6 +156,7 @@ namespace Project1 {
 			this->button2->TabIndex = 8;
 			this->button2->Text = L"Edytuj plan";
 			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// textBox4
 			// 
@@ -304,6 +306,11 @@ private: System::Void label3_Click(System::Object^  sender, System::EventArgs^  
 }
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	
+}
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+		 this->Hide();
+		 MyForm3^ page3 = gcnew MyForm3();
+		 page3->ShowDialog();
 }
 };
 }

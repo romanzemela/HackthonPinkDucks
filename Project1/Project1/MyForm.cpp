@@ -12,6 +12,4 @@ void main(array <String^>^ arg)
 	Project1::MyForm form;
 	Application::Run(%form);
 
-	Project1::MyForm2 form2;
-	Application::Run(%form2);
-}
+	}

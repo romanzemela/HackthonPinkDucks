@@ -51,8 +51,9 @@ namespace Project1 {
 
 	private: System::Windows::Forms::TextBox^  textBox7;
 	private: System::Windows::Forms::Button^  button3;
-	private: System::Windows::Forms::Label^  label2;
+
 	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
 
 
 	protected:
@@ -70,6 +71,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
@@ -82,8 +84,9 @@ namespace Project1 {
 			this->SexSelection = (gcnew System::Windows::Forms::CheckedListBox());
 			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -115,7 +118,7 @@ namespace Project1 {
 			this->textBox2->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Ravie", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(278, 34);
+			this->textBox2->Location = System::Drawing::Point(59, 34);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(502, 36);
 			this->textBox2->TabIndex = 4;
@@ -214,20 +217,6 @@ namespace Project1 {
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->BackColor = System::Drawing::Color::LightCyan;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(238)));
-			this->label2->Location = System::Drawing::Point(718, 97);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(305, 31);
-			this->label2->TabIndex = 15;
-			this->label2->Text = L"Twoje nastepne zajêcia ";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
-			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
@@ -237,14 +226,24 @@ namespace Project1 {
 			this->label3->TabIndex = 16;
 			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click);
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(685, 34);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(397, 262);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 17;
+			this->pictureBox1->TabStop = false;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(1121, 620);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->textBox7);
 			this->Controls->Add(this->SexSelection);
@@ -260,6 +259,7 @@ namespace Project1 {
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

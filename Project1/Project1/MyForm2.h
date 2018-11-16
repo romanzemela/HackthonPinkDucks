@@ -34,7 +34,9 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::TextBox^  textBox2;
+	private: System::Windows::Forms::Label^  label1;
+	protected:
+
 	protected:
 
 	private:
@@ -50,21 +52,19 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
-			// textBox2
+			// label1
 			// 
-			this->textBox2->BackColor = System::Drawing::Color::White;
-			this->textBox2->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Ravie", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Ravie", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(242, 38);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(502, 36);
-			this->textBox2->TabIndex = 5;
-			this->textBox2->Text = L"Alko student";
-			this->textBox2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->label1->Location = System::Drawing::Point(314, 54);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(341, 50);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Alko student";
 			// 
 			// MyForm2
 			// 
@@ -72,7 +72,7 @@ namespace Project1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(970, 579);
-			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->label1);
 			this->Name = L"MyForm2";
 			this->Text = L"MyForm2";
 			this->ResumeLayout(false);
@@ -80,5 +80,7 @@ namespace Project1 {
 
 		}
 #pragma endregion
+	private: System::Void textBox2_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	}
 	};
 }

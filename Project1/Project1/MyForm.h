@@ -45,9 +45,9 @@ namespace Project1 {
 	private: System::Windows::Forms::CheckedListBox^  checkedListBox2;
 	private: System::Windows::Forms::TextBox^  textBox3;
 	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::TextBox^  textBox4;
+
 	private: System::Windows::Forms::TextBox^  textBox5;
-	private: System::Windows::Forms::TextBox^  textBox6;
+
 	private: System::Windows::Forms::CheckedListBox^  SexSelection;
 
 	private: System::Windows::Forms::TextBox^  textBox7;
@@ -55,6 +55,8 @@ namespace Project1 {
 
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::ComboBox^  comboBox2;
+	private: System::Windows::Forms::ComboBox^  comboBox1;
 
 
 	protected:
@@ -79,14 +81,14 @@ namespace Project1 {
 			this->checkedListBox2 = (gcnew System::Windows::Forms::CheckedListBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->SexSelection = (gcnew System::Windows::Forms::CheckedListBox());
 			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -144,7 +146,7 @@ namespace Project1 {
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(278, 19);
 			this->textBox3->TabIndex = 7;
-			this->textBox3->Text = L"Wpisz liczbê procent jakie ma alkohol";
+			this->textBox3->Text = L"Liczba % jakie ma alkohol";
 			this->textBox3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox3_TextChanged);
 			// 
 			// button2
@@ -158,13 +160,6 @@ namespace Project1 {
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
-			// textBox4
-			// 
-			this->textBox4->Location = System::Drawing::Point(300, 410);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(261, 20);
-			this->textBox4->TabIndex = 9;
-			// 
 			// textBox5
 			// 
 			this->textBox5->BorderStyle = System::Windows::Forms::BorderStyle::None;
@@ -175,13 +170,6 @@ namespace Project1 {
 			this->textBox5->Size = System::Drawing::Size(261, 19);
 			this->textBox5->TabIndex = 10;
 			this->textBox5->Text = L"Wpisz swoj¹ wagê ";
-			// 
-			// textBox6
-			// 
-			this->textBox6->Location = System::Drawing::Point(300, 471);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(261, 20);
-			this->textBox6->TabIndex = 11;
 			// 
 			// SexSelection
 			// 
@@ -238,20 +226,56 @@ namespace Project1 {
 			this->pictureBox1->TabIndex = 17;
 			this->pictureBox1->TabStop = false;
 			// 
+			// comboBox2
+			// 
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(101) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59", L"60",
+					L"61", L"62", L"63", L"64", L"65", L"66", L"67", L"68", L"69", L"70", L"71", L"72", L"73", L"74", L"75", L"76", L"77", L"78",
+					L"79", L"80", L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96",
+					L"97", L"98", L"99", L"100"
+			});
+			this->comboBox2->Location = System::Drawing::Point(300, 410);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(121, 21);
+			this->comboBox2->TabIndex = 22;
+			// 
+			// comboBox1
+			// 
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(131) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59", L"60",
+					L"61", L"62", L"63", L"64", L"65", L"66", L"67", L"68", L"69", L"70", L"71", L"72", L"73", L"74", L"75", L"76", L"77", L"78",
+					L"79", L"80", L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96",
+					L"97", L"98", L"99", L"100", L"101", L"102", L"103", L"104", L"105", L"106", L"107", L"108", L"109", L"110", L"111", L"112",
+					L"113", L"114", L"115", L"116", L"117", L"118", L"119", L"120", L"121", L"122", L"123", L"124", L"125", L"126", L"127", L"128",
+					L"129", L"130"
+			});
+			this->comboBox1->Location = System::Drawing::Point(300, 468);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 23;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(1121, 620);
+			this->Controls->Add(this->comboBox1);
+			this->Controls->Add(this->comboBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->textBox7);
 			this->Controls->Add(this->SexSelection);
-			this->Controls->Add(this->textBox6);
 			this->Controls->Add(this->textBox5);
-			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->checkedListBox2);
@@ -294,8 +318,7 @@ private: System::Void checkedListBox1_SelectedIndexChanged(System::Object^  send
 private: System::Void textBox7_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
-	String ^ AlkoPercent = textBox4->Text;
-	String ^ Weight = textBox6->Text;
+	
 	this->Hide();
 	MyForm2^ page2 = gcnew MyForm2();
 	page2->ShowDialog();
@@ -311,6 +334,9 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 		 this->Hide();
 		 MyForm3^ page3 = gcnew MyForm3();
 		 page3->ShowDialog();
+}
+private: System::Void textBox4_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	
 }
 };
 }

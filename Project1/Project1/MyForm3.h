@@ -65,6 +65,8 @@ namespace Project1 {
 	private: System::Windows::Forms::ComboBox^  comboBox12;
 	private: System::Windows::Forms::ComboBox^  comboBox13;
 	private: System::Windows::Forms::ComboBox^  comboBox14;
+	private: System::Windows::Forms::Label^  label9;
+	private: System::Windows::Forms::Label^  label10;
 
 
 	private:
@@ -103,6 +105,8 @@ namespace Project1 {
 			this->comboBox12 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox13 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox14 = (gcnew System::Windows::Forms::ComboBox());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -387,12 +391,32 @@ namespace Project1 {
 			this->comboBox14->Size = System::Drawing::Size(121, 21);
 			this->comboBox14->TabIndex = 31;
 			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(543, 124);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(49, 13);
+			this->label9->TabIndex = 32;
+			this->label9->Text = L"Godzina ";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(678, 124);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(42, 13);
+			this->label10->TabIndex = 33;
+			this->label10->Text = L"Minuta ";
+			// 
 			// MyForm3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(1075, 624);
+			this->Controls->Add(this->label10);
+			this->Controls->Add(this->label9);
 			this->Controls->Add(this->comboBox14);
 			this->Controls->Add(this->comboBox13);
 			this->Controls->Add(this->comboBox12);

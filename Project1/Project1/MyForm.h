@@ -38,9 +38,23 @@ namespace Project1 {
 		}
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::RichTextBox^  richTextBox1;
-	private: System::Windows::Forms::TextBox^  textBox1;
+
+
 	private: System::Windows::Forms::TextBox^  textBox2;
+	private: System::Windows::Forms::CheckedListBox^  checkedListBox2;
+	private: System::Windows::Forms::TextBox^  textBox3;
+	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::TextBox^  textBox4;
+	private: System::Windows::Forms::TextBox^  textBox5;
+	private: System::Windows::Forms::TextBox^  textBox6;
+	private: System::Windows::Forms::CheckedListBox^  SexSelection;
+
+	private: System::Windows::Forms::TextBox^  textBox7;
+	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::Label^  label3;
+
+
 	protected:
 
 	private:
@@ -58,80 +72,194 @@ namespace Project1 {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->checkedListBox2 = (gcnew System::Windows::Forms::CheckedListBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->SexSelection = (gcnew System::Windows::Forms::CheckedListBox());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Verdana", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Verdana", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->label1->Location = System::Drawing::Point(52, 150);
+			this->label1->Location = System::Drawing::Point(51, 218);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(189, 59);
+			this->label1->Size = System::Drawing::Size(148, 45);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"label1";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(102, 436);
+			this->button1->BackColor = System::Drawing::Color::LightCyan;
+			this->button1->Location = System::Drawing::Point(24, 427);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(251, 23);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Wczytaj plan ";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
-			// 
-			// richTextBox1
-			// 
-			this->richTextBox1->BackColor = System::Drawing::SystemColors::ControlDark;
-			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(238)));
-			this->richTextBox1->Location = System::Drawing::Point(699, 117);
-			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(357, 139);
-			this->richTextBox1->TabIndex = 2;
-			this->richTextBox1->Text = L"";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Verdana", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(238)));
-			this->textBox1->Location = System::Drawing::Point(711, 138);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(336, 23);
-			this->textBox1->TabIndex = 3;
-			this->textBox1->Text = L"Twoje nastêpne zajêcia ";
-			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
 			// textBox2
 			// 
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Verdana", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(238)));
-			this->textBox2->Location = System::Drawing::Point(254, 57);
+			this->textBox2->BackColor = System::Drawing::Color::White;
+			this->textBox2->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Ravie", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox2->Location = System::Drawing::Point(278, 34);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(502, 40);
+			this->textBox2->Size = System::Drawing::Size(502, 36);
 			this->textBox2->TabIndex = 4;
 			this->textBox2->Text = L"Alko student";
+			this->textBox2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
+			// 
+			// checkedListBox2
+			// 
+			this->checkedListBox2->FormattingEnabled = true;
+			this->checkedListBox2->Location = System::Drawing::Point(392, 42);
+			this->checkedListBox2->Name = L"checkedListBox2";
+			this->checkedListBox2->Size = System::Drawing::Size(8, 4);
+			this->checkedListBox2->TabIndex = 6;
+			// 
+			// textBox3
+			// 
+			this->textBox3->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->textBox3->Location = System::Drawing::Point(300, 385);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(278, 19);
+			this->textBox3->TabIndex = 7;
+			this->textBox3->Text = L"Wpisz liczbê procent jakie ma alkohol";
+			this->textBox3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox3_TextChanged);
+			// 
+			// button2
+			// 
+			this->button2->BackColor = System::Drawing::Color::LightCyan;
+			this->button2->Location = System::Drawing::Point(24, 465);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(251, 24);
+			this->button2->TabIndex = 8;
+			this->button2->Text = L"Edytuj plan";
+			this->button2->UseVisualStyleBackColor = false;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(300, 410);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(261, 20);
+			this->textBox4->TabIndex = 9;
+			// 
+			// textBox5
+			// 
+			this->textBox5->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->textBox5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->textBox5->Location = System::Drawing::Point(300, 446);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(261, 19);
+			this->textBox5->TabIndex = 10;
+			this->textBox5->Text = L"Wpisz swoj¹ wagê ";
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(300, 471);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(261, 20);
+			this->textBox6->TabIndex = 11;
+			// 
+			// SexSelection
+			// 
+			this->SexSelection->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->SexSelection->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->SexSelection->FormattingEnabled = true;
+			this->SexSelection->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Kobieta ", L"Me¿czyzna" });
+			this->SexSelection->Location = System::Drawing::Point(601, 410);
+			this->SexSelection->Name = L"SexSelection";
+			this->SexSelection->Size = System::Drawing::Size(155, 84);
+			this->SexSelection->TabIndex = 12;
+			this->SexSelection->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::checkedListBox1_SelectedIndexChanged);
+			// 
+			// textBox7
+			// 
+			this->textBox7->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->textBox7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->textBox7->Location = System::Drawing::Point(601, 384);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(152, 19);
+			this->textBox7->TabIndex = 13;
+			this->textBox7->Text = L"Wybierz p³eæ ";
+			this->textBox7->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox7_TextChanged);
+			// 
+			// button3
+			// 
+			this->button3->BackColor = System::Drawing::Color::LightCyan;
+			this->button3->Location = System::Drawing::Point(359, 512);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(116, 23);
+			this->button3->TabIndex = 14;
+			this->button3->Text = L"ZatwierdŸ!";
+			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->BackColor = System::Drawing::Color::LightCyan;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->label2->Location = System::Drawing::Point(718, 97);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(305, 31);
+			this->label2->TabIndex = 15;
+			this->label2->Text = L"Twoje nastepne zajêcia ";
+			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
+			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(712, 153);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(0, 13);
+			this->label3->TabIndex = 16;
+			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(1121, 620);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->textBox7);
+			this->Controls->Add(this->SexSelection);
+			this->Controls->Add(this->textBox6);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->checkedListBox2);
 			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -140,10 +268,39 @@ namespace Project1 {
 	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+
 	}
 	private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	}
 private: System::Void textBox2_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void checkBox1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+	
+}
+private: System::Void textBox3_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void checkedListBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	if (this->SexSelection->SelectedIndex == 0)
+	{
+		this->SexSelection->SetItemChecked(1, 0);
+	}
+	else
+	{
+		this->SexSelection->SetItemChecked(0, 0);
+	}
+}
+private: System::Void textBox7_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	String ^ AlkoPercent = textBox4->Text;
+	String ^ Weight = textBox6->Text;
+}
+private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label3_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
+	
 }
 };
 }

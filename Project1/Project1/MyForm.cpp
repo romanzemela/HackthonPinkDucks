@@ -1,4 +1,5 @@
 #include "MyForm.h"
+#include "MyForm2.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -10,4 +11,7 @@ void main(array <String^>^ arg)
 	Application::SetCompatibleTextRenderingDefault(false);
 	Project1::MyForm form;
 	Application::Run(%form);
+
+	Project1::MyForm2 form2;
+	Application::Run(%form2);
 }

@@ -1,5 +1,5 @@
 #pragma once
-
+#include "MyForm2.h"
 namespace Project1 {
 
 	using namespace System;
@@ -268,7 +268,7 @@ namespace Project1 {
 	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-
+		
 	}
 	private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	}
@@ -294,6 +294,9 @@ private: System::Void textBox7_TextChanged(System::Object^  sender, System::Even
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	String ^ AlkoPercent = textBox4->Text;
 	String ^ Weight = textBox6->Text;
+	this->Hide();
+	MyForm2^ page2 = gcnew MyForm2();
+	page2->ShowDialog();
 }
 private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
 }

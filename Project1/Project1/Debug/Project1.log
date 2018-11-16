@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+c:\users\user\documents\github\hackthonpinkducks\project1\project1\myform.cpp(8): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Project1.vcxproj -> C:\Users\User\Documents\GitHub\HackthonPinkDucks\Project1\Debug\Project1.exe

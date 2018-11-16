@@ -43,15 +43,28 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^  label6;
 	private: System::Windows::Forms::Button^  button1;
 
-	private: System::Windows::Forms::TextBox^  textBox2;
-	private: System::Windows::Forms::TextBox^  textBox3;
-	private: System::Windows::Forms::TextBox^  textBox4;
-	private: System::Windows::Forms::TextBox^  textBox5;
+
+
+
+
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::TextBox^  textBox6;
-	private: System::Windows::Forms::TextBox^  textBox7;
+
+
 	private: System::Windows::Forms::ComboBox^  comboBox1;
+	private: System::Windows::Forms::ComboBox^  comboBox3;
+	private: System::Windows::Forms::ComboBox^  comboBox5;
+	private: System::Windows::Forms::ComboBox^  comboBox2;
+	private: System::Windows::Forms::ComboBox^  comboBox4;
+	private: System::Windows::Forms::ComboBox^  comboBox6;
+	private: System::Windows::Forms::ComboBox^  comboBox7;
+	private: System::Windows::Forms::ComboBox^  comboBox8;
+	private: System::Windows::Forms::ComboBox^  comboBox9;
+	private: System::Windows::Forms::ComboBox^  comboBox10;
+	private: System::Windows::Forms::ComboBox^  comboBox11;
+	private: System::Windows::Forms::ComboBox^  comboBox12;
+	private: System::Windows::Forms::ComboBox^  comboBox13;
+	private: System::Windows::Forms::ComboBox^  comboBox14;
 
 
 	private:
@@ -74,15 +87,22 @@ namespace Project1 {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox5 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox4 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox6 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox7 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox8 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox9 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox10 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox11 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox12 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox13 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox14 = (gcnew System::Windows::Forms::ComboBox());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -162,34 +182,6 @@ namespace Project1 {
 			this->button1->Text = L"ZatwierdŸ ";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(516, 226);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(159, 20);
-			this->textBox2->TabIndex = 8;
-			// 
-			// textBox3
-			// 
-			this->textBox3->Location = System::Drawing::Point(516, 191);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(159, 20);
-			this->textBox3->TabIndex = 9;
-			// 
-			// textBox4
-			// 
-			this->textBox4->Location = System::Drawing::Point(516, 264);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(159, 20);
-			this->textBox4->TabIndex = 10;
-			// 
-			// textBox5
-			// 
-			this->textBox5->Location = System::Drawing::Point(516, 308);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(159, 20);
-			this->textBox5->TabIndex = 11;
-			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
@@ -213,20 +205,6 @@ namespace Project1 {
 			this->label8->TabIndex = 13;
 			this->label8->Text = L"Niedziela ";
 			// 
-			// textBox6
-			// 
-			this->textBox6->Location = System::Drawing::Point(516, 351);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(159, 20);
-			this->textBox6->TabIndex = 14;
-			// 
-			// textBox7
-			// 
-			this->textBox7->Location = System::Drawing::Point(516, 397);
-			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(159, 20);
-			this->textBox7->TabIndex = 15;
-			// 
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
@@ -239,21 +217,198 @@ namespace Project1 {
 			this->comboBox1->Size = System::Drawing::Size(121, 21);
 			this->comboBox1->TabIndex = 16;
 			// 
+			// comboBox3
+			// 
+			this->comboBox3->FormattingEnabled = true;
+			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(24) {
+				L"0 ", L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23"
+			});
+			this->comboBox3->Location = System::Drawing::Point(516, 191);
+			this->comboBox3->Name = L"comboBox3";
+			this->comboBox3->Size = System::Drawing::Size(121, 21);
+			this->comboBox3->TabIndex = 18;
+			// 
+			// comboBox5
+			// 
+			this->comboBox5->FormattingEnabled = true;
+			this->comboBox5->Items->AddRange(gcnew cli::array< System::Object^  >(24) {
+				L"0 ", L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23"
+			});
+			this->comboBox5->Location = System::Drawing::Point(516, 226);
+			this->comboBox5->Name = L"comboBox5";
+			this->comboBox5->Size = System::Drawing::Size(121, 21);
+			this->comboBox5->TabIndex = 20;
+			// 
+			// comboBox2
+			// 
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox2->Location = System::Drawing::Point(643, 149);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(121, 21);
+			this->comboBox2->TabIndex = 21;
+			// 
+			// comboBox4
+			// 
+			this->comboBox4->FormattingEnabled = true;
+			this->comboBox4->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox4->Location = System::Drawing::Point(643, 191);
+			this->comboBox4->Name = L"comboBox4";
+			this->comboBox4->Size = System::Drawing::Size(121, 21);
+			this->comboBox4->TabIndex = 22;
+			// 
+			// comboBox6
+			// 
+			this->comboBox6->FormattingEnabled = true;
+			this->comboBox6->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox6->Location = System::Drawing::Point(643, 226);
+			this->comboBox6->Name = L"comboBox6";
+			this->comboBox6->Size = System::Drawing::Size(121, 21);
+			this->comboBox6->TabIndex = 23;
+			// 
+			// comboBox7
+			// 
+			this->comboBox7->FormattingEnabled = true;
+			this->comboBox7->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox7->Location = System::Drawing::Point(643, 264);
+			this->comboBox7->Name = L"comboBox7";
+			this->comboBox7->Size = System::Drawing::Size(121, 21);
+			this->comboBox7->TabIndex = 24;
+			// 
+			// comboBox8
+			// 
+			this->comboBox8->FormattingEnabled = true;
+			this->comboBox8->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox8->Location = System::Drawing::Point(643, 308);
+			this->comboBox8->Name = L"comboBox8";
+			this->comboBox8->Size = System::Drawing::Size(121, 21);
+			this->comboBox8->TabIndex = 25;
+			// 
+			// comboBox9
+			// 
+			this->comboBox9->FormattingEnabled = true;
+			this->comboBox9->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox9->Location = System::Drawing::Point(643, 352);
+			this->comboBox9->Name = L"comboBox9";
+			this->comboBox9->Size = System::Drawing::Size(121, 21);
+			this->comboBox9->TabIndex = 26;
+			// 
+			// comboBox10
+			// 
+			this->comboBox10->FormattingEnabled = true;
+			this->comboBox10->Items->AddRange(gcnew cli::array< System::Object^  >(60) {
+				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
+					L"07", L"08", L"09", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24",
+					L"25", L"26", L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42",
+					L"43", L"44", L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59"
+			});
+			this->comboBox10->Location = System::Drawing::Point(643, 398);
+			this->comboBox10->Name = L"comboBox10";
+			this->comboBox10->Size = System::Drawing::Size(121, 21);
+			this->comboBox10->TabIndex = 27;
+			// 
+			// comboBox11
+			// 
+			this->comboBox11->FormattingEnabled = true;
+			this->comboBox11->Items->AddRange(gcnew cli::array< System::Object^  >(24) {
+				L"0 ", L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23"
+			});
+			this->comboBox11->Location = System::Drawing::Point(516, 262);
+			this->comboBox11->Name = L"comboBox11";
+			this->comboBox11->Size = System::Drawing::Size(121, 21);
+			this->comboBox11->TabIndex = 28;
+			// 
+			// comboBox12
+			// 
+			this->comboBox12->FormattingEnabled = true;
+			this->comboBox12->Items->AddRange(gcnew cli::array< System::Object^  >(24) {
+				L"0 ", L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23"
+			});
+			this->comboBox12->Location = System::Drawing::Point(516, 308);
+			this->comboBox12->Name = L"comboBox12";
+			this->comboBox12->Size = System::Drawing::Size(121, 21);
+			this->comboBox12->TabIndex = 29;
+			// 
+			// comboBox13
+			// 
+			this->comboBox13->FormattingEnabled = true;
+			this->comboBox13->Items->AddRange(gcnew cli::array< System::Object^  >(24) {
+				L"0 ", L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23"
+			});
+			this->comboBox13->Location = System::Drawing::Point(516, 352);
+			this->comboBox13->Name = L"comboBox13";
+			this->comboBox13->Size = System::Drawing::Size(121, 21);
+			this->comboBox13->TabIndex = 30;
+			// 
+			// comboBox14
+			// 
+			this->comboBox14->FormattingEnabled = true;
+			this->comboBox14->Items->AddRange(gcnew cli::array< System::Object^  >(24) {
+				L"0 ", L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23"
+			});
+			this->comboBox14->Location = System::Drawing::Point(519, 398);
+			this->comboBox14->Name = L"comboBox14";
+			this->comboBox14->Size = System::Drawing::Size(121, 21);
+			this->comboBox14->TabIndex = 31;
+			// 
 			// MyForm3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(1075, 624);
+			this->Controls->Add(this->comboBox14);
+			this->Controls->Add(this->comboBox13);
+			this->Controls->Add(this->comboBox12);
+			this->Controls->Add(this->comboBox11);
+			this->Controls->Add(this->comboBox10);
+			this->Controls->Add(this->comboBox9);
+			this->Controls->Add(this->comboBox8);
+			this->Controls->Add(this->comboBox7);
+			this->Controls->Add(this->comboBox6);
+			this->Controls->Add(this->comboBox4);
+			this->Controls->Add(this->comboBox2);
+			this->Controls->Add(this->comboBox5);
+			this->Controls->Add(this->comboBox3);
 			this->Controls->Add(this->comboBox1);
-			this->Controls->Add(this->textBox7);
-			this->Controls->Add(this->textBox6);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
-			this->Controls->Add(this->textBox5);
-			this->Controls->Add(this->textBox4);
-			this->Controls->Add(this->textBox3);
-			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);

@@ -39,6 +39,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::RichTextBox^  richTextBox1;
+	private: System::Windows::Forms::TextBox^  textBox1;
+	private: System::Windows::Forms::TextBox^  textBox2;
 	protected:
 
 	private:
@@ -57,23 +59,25 @@ namespace Project1 {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Verdana", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->label1->Location = System::Drawing::Point(50, 118);
+			this->label1->Location = System::Drawing::Point(52, 150);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(158, 55);
+			this->label1->Size = System::Drawing::Size(189, 59);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"label1";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(126, 464);
+			this->button1->Location = System::Drawing::Point(102, 436);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(251, 23);
 			this->button1->TabIndex = 1;
@@ -83,18 +87,46 @@ namespace Project1 {
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(626, 87);
+			this->richTextBox1->BackColor = System::Drawing::SystemColors::ControlDark;
+			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->richTextBox1->Location = System::Drawing::Point(699, 117);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->Size = System::Drawing::Size(357, 139);
 			this->richTextBox1->TabIndex = 2;
 			this->richTextBox1->Text = L"";
 			// 
+			// textBox1
+			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Verdana", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->textBox1->Location = System::Drawing::Point(711, 138);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(336, 23);
+			this->textBox1->TabIndex = 3;
+			this->textBox1->Text = L"Twoje nastêpne zajêcia ";
+			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
+			// 
+			// textBox2
+			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Verdana", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->textBox2->Location = System::Drawing::Point(254, 57);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(502, 40);
+			this->textBox2->TabIndex = 4;
+			this->textBox2->Text = L"Alko student";
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::GhostWhite;
+			this->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->ClientSize = System::Drawing::Size(1121, 620);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
@@ -109,5 +141,9 @@ namespace Project1 {
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
-	};
+	private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	}
+private: System::Void textBox2_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+}
+};
 }

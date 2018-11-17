@@ -60,7 +60,7 @@ namespace Project1 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Ravie", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(314, 54);
+			this->label1->Location = System::Drawing::Point(40, 60);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(341, 50);
 			this->label1->TabIndex = 0;

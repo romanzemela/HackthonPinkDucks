@@ -306,7 +306,9 @@ namespace Project1 {
 			if ((myStream = openDileDialog1->OpenFile()) != nullptr)
 			{
 				String ^ strfilename = openDileDialog1->InitialDirectory + openDileDialog1->FileName;
-				MessageBox::Show(strfilename);
+				String ^ Readfile = File::ReadAllText(strfilename);
+				Readfile->Split(' ');
+				MessageBox::Show(Readfile);
 				myStream->Close();
 			}
 		}

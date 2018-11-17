@@ -24,6 +24,12 @@
     <ClInclude Include="MyForm3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Week.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Alkocalko.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp">
@@ -33,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MyForm3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Alkocalko.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

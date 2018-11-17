@@ -135,11 +135,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Alkocalko.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="MyForm2.cpp" />
     <ClCompile Include="MyForm3.cpp" />
+    <ClCompile Include="Week.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alkocalko.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -149,6 +152,7 @@
     <ClInclude Include="MyForm3.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Week.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">

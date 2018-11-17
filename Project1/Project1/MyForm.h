@@ -1,6 +1,8 @@
 #pragma once
 #include "MyForm2.h"
 #include "MyForm3.h"
+#include <fstream>
+
 namespace Project1 {
 
 	using namespace System;
@@ -9,7 +11,7 @@ namespace Project1 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	using namespace System::IO;
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
@@ -107,7 +109,7 @@ namespace Project1 {
 			// button1
 			// 
 			this->button1->BackColor = System::Drawing::Color::LightCyan;
-			this->button1->Location = System::Drawing::Point(24, 427);
+			this->button1->Location = System::Drawing::Point(24, 410);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(251, 23);
 			this->button1->TabIndex = 1;
@@ -121,7 +123,7 @@ namespace Project1 {
 			this->textBox2->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Ravie", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(59, 34);
+			this->textBox2->Location = System::Drawing::Point(59, 52);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(502, 36);
 			this->textBox2->TabIndex = 4;
@@ -152,7 +154,7 @@ namespace Project1 {
 			// button2
 			// 
 			this->button2->BackColor = System::Drawing::Color::LightCyan;
-			this->button2->Location = System::Drawing::Point(24, 465);
+			this->button2->Location = System::Drawing::Point(24, 446);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(251, 24);
 			this->button2->TabIndex = 8;
@@ -178,7 +180,7 @@ namespace Project1 {
 				static_cast<System::Byte>(238)));
 			this->SexSelection->FormattingEnabled = true;
 			this->SexSelection->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Kobieta ", L"Me¿czyzna" });
-			this->SexSelection->Location = System::Drawing::Point(601, 410);
+			this->SexSelection->Location = System::Drawing::Point(560, 410);
 			this->SexSelection->Name = L"SexSelection";
 			this->SexSelection->Size = System::Drawing::Size(155, 84);
 			this->SexSelection->TabIndex = 12;
@@ -189,7 +191,7 @@ namespace Project1 {
 			this->textBox7->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->textBox7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->textBox7->Location = System::Drawing::Point(601, 384);
+			this->textBox7->Location = System::Drawing::Point(560, 385);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(152, 19);
 			this->textBox7->TabIndex = 13;
@@ -228,6 +230,7 @@ namespace Project1 {
 			// 
 			// comboBox2
 			// 
+			this->comboBox2->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboBox2->FormattingEnabled = true;
 			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(101) {
 				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
@@ -242,9 +245,11 @@ namespace Project1 {
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(121, 21);
 			this->comboBox2->TabIndex = 22;
+			this->comboBox2->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox2_SelectedIndexChanged);
 			// 
 			// comboBox1
 			// 
+			this->comboBox1->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(131) {
 				L"00 ", L"01", L"02", L"03", L"04", L"05", L"06",
@@ -294,7 +299,17 @@ namespace Project1 {
 	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		
+		Stream ^ myStream;
+		OpenFileDialog ^ openDileDialog1 = gcnew OpenFileDialog;
+		if (openDileDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			if ((myStream = openDileDialog1->OpenFile()) != nullptr)
+			{
+				String ^ strfilename = openDileDialog1->InitialDirectory + openDileDialog1->FileName;
+				MessageBox::Show(strfilename);
+				myStream->Close();
+			}
+		}
 	}
 	private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	}
@@ -337,6 +352,8 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void textBox4_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	
+}
+private: System::Void comboBox2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
